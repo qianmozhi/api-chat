@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenAI</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/highlight.min.css" rel="stylesheet" />
+    <link href="./assets/css/chatgpt.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="./assets/img/openai.svg" alt="" width="320" height="auto" />
+          <p class="lead">由 OpenAI 官方 API 实现，避免注册账号和网络不畅等问题。</p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-12">
+            <ul class="list py-4" id="ul"></ul>
+          </div>
+          <div class="col-12">
+            <form>
+              <div class="row g-3 my-3">
+                <p class="text-small"></p>
+                <div class="col-12">
+                  <textarea id="txt" class="form-control" placeholder="聊点什么..."></textarea>
+                  <div id="tips" class="invalid-feedback"></div>
+                  <div class="form-text" style="color: var(--bs-tertiary-color)"><em>使用中请注意数据安全，避免涉及敏感话题。</em></div>
+                </div>
+              </div>
+              <button class="w-100 btn btn-primary btn-lg" type="button" id="send">与 OpenAI 交谈</button>
+              <p class="pt-2 text-muted text-center">（可以使用 Ctrl+Enter 直接发送）</p>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">技术战略发展部（TSD）构建与维护</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="http://10.170.33.107/liming/chatgpt.neusoft.link">获取源码</a></li>
+          <li class="list-inline-item"><a href="https://platform.openai.com/docs">官方 API 文档</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./assets/js/marked.min.js"></script>
+    <script src="./assets/js/highlight.min.js"></script>
+    <script src="./assets/js/chatgpt.js"></script>
+  </body>
+</html>
